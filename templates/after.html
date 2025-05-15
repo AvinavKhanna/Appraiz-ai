@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appraiz.ai - Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Appraiz.ai</div>
+    </header>
+
+    <!-- Result Container -->
+    <div class="container">
+        <h2>Estimated Value: ${{ predicted_price }}</h2>
+        <p>Confidence Range: ± ${{ uncertainty }}</p>
+        <p>Based on recent listings on eBay.</p>
+        <a href="/">← Go back to home</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 University of Technology Sydney (UTS) | Built as part of a student project | Contact: example@uts.edu.au</p>
+    </footer>
+
+</body>
+</html>
